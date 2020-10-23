@@ -5,6 +5,7 @@
   "dependencies": {
     "acorn": ">=7.1.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "gh-pages": "^3.1.0",
     "minimist": ">=1.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -15,7 +16,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=true",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "homepage": "https://leandroparisi.github.io/B12.movie-cards-library-stateful/",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
